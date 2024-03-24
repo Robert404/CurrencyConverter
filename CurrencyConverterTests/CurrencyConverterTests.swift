@@ -8,14 +8,43 @@
 import XCTest
 @testable import CurrencyConverter
 
-extension XCTestCase {
-    func wait(interval: TimeInterval = 0.1 , completion: @escaping (() -> Void)) {
-        let exp = expectation(description: "")
-        DispatchQueue.main.asyncAfter(deadline: .now() + interval) {
-            completion()
-            exp.fulfill()
+class ApiServiceMock: ApiServiceProtocol {
+    var responseStatusCode = 0
+    
+    func convertCurrency(from: CurrencyConverter.CurrencyCode, to: CurrencyConverter.CurrencyCode, sum: Double) -> Double {
+        return 0.0
+    }
+    
+    func getRates(_ completion: @escaping (Result<[CurrencyConverter.CurrencyPair], CurrencyConverter.ApiError>) -> Void) {
+        guard let url = Endpoint.ratesURL else {
+            completion(.failure(.unknown))
+            return
         }
-        waitForExpectations(timeout: interval + 0.1) // add 0.1 for sure `asyncAfter` called
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard data != nil else {
+                completion(.failure(.unknown))
+                return
+            }
+            guard let response = response as? HTTPURLResponse, 200 ... 299 ~= response.statusCode else {
+                completion(.failure(.unknown))
+                return
+            }
+            self.responseStatusCode = response.statusCode
+            completion(.success([]))
+        }.resume()
+    }
+}
+
+class ApiServiceMockFailed: ApiServiceProtocol {
+    var responseStatusCode = 0
+    
+    func convertCurrency(from: CurrencyConverter.CurrencyCode, to: CurrencyConverter.CurrencyCode, sum: Double) -> Double {
+        return 0.0
+    }
+    
+    func getRates(_ completion: @escaping (Result<[CurrencyConverter.CurrencyPair], CurrencyConverter.ApiError>) -> Void) {
+        completion(.failure(.unknown))
     }
 }
 

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+extension String {
+    var isEmptyOrWhiteSpace: Bool {
+        let whitespace = CharacterSet.whitespacesAndNewlines
+        let trimmed = trimmingCharacters(in: whitespace)
+        return isEmpty || trimmed.isEmpty
+    }
+}

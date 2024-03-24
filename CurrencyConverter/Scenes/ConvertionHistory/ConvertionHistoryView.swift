@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct ConvertionHistoryView: View {
+    @StateObject var viewModel = ConvertionHistoryViewModel()
+    @Environment(\.managedObjectContext) private var viewContext
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                if viewModel.filteredConvertions.isEmpty {
+                    Text("No items found.")
+                        .font(.title)
+                        .foregroundColor(.secondary)
+                        .padding()
+                } else {
+                    List {
+                        ForEach(viewModel.filteredConvertions, id: \.self) { conversion in
+                            HStack {
+                                Text("\(conversion.fromCurrency ?? "") / \(conversion.toCurrency ?? "")")
+                                Spacer()
+                                Text("\(conversion.toCurrency ?? "") \(String(format: "%.2f", conversion.sum))")
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Conversions History")
+            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
+            .onAppear {
+                viewModel.getHistory(viewContext)
+            }
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

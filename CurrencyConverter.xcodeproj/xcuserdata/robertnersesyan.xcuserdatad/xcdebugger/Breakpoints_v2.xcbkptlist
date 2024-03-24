@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "91F6AE0B-547A-450E-9FAC-A93050D13DBB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "343B751F-ACFF-4B30-B473-E02267C50724"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "getRatesFromDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "961F8CBD-7CAA-4243-B89E-693A4105091E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "getRates(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "961F8CBD-7CAA-4243-B89E-693A4105091E - 7380487323c6a723"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.ApiService.getRates() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1628">
+               </Location>
+               <Location
+                  uuid = "961F8CBD-7CAA-4243-B89E-693A4105091E - 6269db2529ea3da1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.Double) -&gt; CurrencyConverter.CurrencyPair in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.ApiService.getRates() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1AD30881-2706-4122-BAF9-D06C4FEE08A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "addRateToDB(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "655506AC-1F72-4E8F-9FA9-97657A294B2C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "getRatesFromDB()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "655506AC-1F72-4E8F-9FA9-97657A294B2C - 4c51add95b5c9395"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.ApiService.getRatesFromDB() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "655506AC-1F72-4E8F-9FA9-97657A294B2C - 4c51add95b5c93f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.ApiService.getRatesFromDB() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "500">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC1F5C9F-E876-4CDC-ACE7-EE453FB7C17B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "addRateToDB(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9EE4463-0943-4BA1-A4B0-0333913AE42A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "getRatesFromDB()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9EE4463-0943-4BA1-A4B0-0333913AE42A - 92a1fb6d8c517928"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.ApiService.addRateToDB(from: CurrencyConverter.CurrencyCode, to: CurrencyConverter.CurrencyCode, rate: Swift.Double) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "764">
+               </Location>
+               <Location
+                  uuid = "D9EE4463-0943-4BA1-A4B0-0333913AE42A - 4c51add95b5c93b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.ApiService.getRatesFromDB() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69C6BEB9-14B1-4051-B6AA-7BCF280D9BFB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "getRatesFromDB()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "69C6BEB9-14B1-4051-B6AA-7BCF280D9BFB - 4c51add95b5c8c32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.ApiService.getRatesFromDB() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "69C6BEB9-14B1-4051-B6AA-7BCF280D9BFB - 7d736433c6f0e18d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CurrencyConverter.CurrencyRate) -&gt; CurrencyConverter.CurrencyPair in CurrencyConverter.ApiService.getRatesFromDB() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Core/Network/ApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29AF70F1-5211-4904-A1ED-A4C42E4E4C5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Core/Network/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "convertCurrency(from:to:sum:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74D9CAD0-94B0-4EBB-9014-42CFB0940297"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Scenes/CurrencyConvertion/CurrencyConverterViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "startRefreshRatesTimer(timeInterval:repeats:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74D9CAD0-94B0-4EBB-9014-42CFB0940297 - a232c37ed5b7ee13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in CurrencyConverter.CurrencyConverterViewModel.startRefreshRatesTimer(timeInterval: Swift.Double, repeats: Swift.Bool) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Scenes/CurrencyConvertion/CurrencyConverterViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "74D9CAD0-94B0-4EBB-9014-42CFB0940297 - 630f3957f9d7f095"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; () in closure #1 @Sendable (__C.NSTimer) -&gt; () in CurrencyConverter.CurrencyConverterViewModel.startRefreshRatesTimer(timeInterval: Swift.Double, repeats: Swift.Bool) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverter/Scenes/CurrencyConvertion/CurrencyConverterViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E777DB43-0C2A-4770-ACF5-87EC54086A1B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "testGetCurrencyRatesFailed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E777DB43-0C2A-4770-ACF5-87EC54086A1B - 6f9c0a1aca47310e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "E777DB43-0C2A-4770-ACF5-87EC54086A1B - 6f9c0a1aca47310e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9A8E941-3059-4225-879F-BF361A4510CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "testStartRefreshRatesTimerSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E9A8E941-3059-4225-879F-BF361A4510CD - 6f9c0a1aca473244"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "E9A8E941-3059-4225-879F-BF361A4510CD - f309958570ecceed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "E9A8E941-3059-4225-879F-BF361A4510CD - f309958570ecceed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BFD491E-4F21-4D63-9C1A-F6807F2325F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "testStartRefreshRatesTimerSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7BFD491E-4F21-4D63-9C1A-F6807F2325F4 - f309958570ecce71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "7BFD491E-4F21-4D63-9C1A-F6807F2325F4 - f309958570ecce71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "568">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF6F48D9-5FB9-4D7E-B81D-F65521DD9646"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "testStartRefreshRatesTimerSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF6F48D9-5FB9-4D7E-B81D-F65521DD9646 - f309958570eccff5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "896">
+               </Location>
+               <Location
+                  uuid = "BF6F48D9-5FB9-4D7E-B81D-F65521DD9646 - f309958570eccfd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverterTests.ApiServiceMock.getRates((Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "896">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B054F50-A569-4DE3-97BB-F1D3824B4D62"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "testGetCurrencyRatesSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4B054F50-A569-4DE3-97BB-F1D3824B4D62 - b78150e40287c8d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; () in CurrencyConverterTests.CurrencyConverterTests.testGetCurrencyRatesSuccess() -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "4B054F50-A569-4DE3-97BB-F1D3824B4D62 - b78150e40287c8d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; () in CurrencyConverterTests.CurrencyConverterTests.testGetCurrencyRatesSuccess() -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91CDDF65-DA63-4D23-B7CF-9A0F95E41193"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "testGetCurrencyRatesSuccess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CC7A1FB-7D8E-469C-9C87-A1086B07F6C4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "testGetCurrencyRatesSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3CC7A1FB-7D8E-469C-9C87-A1086B07F6C4 - c01fb9965bf71fbe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverterTests.CurrencyConverterTests.testGetCurrencyRatesSuccess() -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "3CC7A1FB-7D8E-469C-9C87-A1086B07F6C4 - b78150e40287c89e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;CurrencyConverter.CurrencyPair&gt;, CurrencyConverter.ApiError&gt;) -&gt; () in CurrencyConverterTests.CurrencyConverterTests.testGetCurrencyRatesSuccess() -&gt; ()"
+                  moduleName = "CurrencyConverterTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertnersesyan/Desktop/Projects/CurrencyConverter/CurrencyConverterTests/CurrencyConverterTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F49C22B6-23CE-4BB3-AED6-275A10F17375"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverterTests/CurrencyConverterTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "testStartRefreshRatesTimerSuccess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

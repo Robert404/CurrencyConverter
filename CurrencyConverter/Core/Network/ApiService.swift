@@ -6,67 +6,119 @@
 //
 
 import Foundation
+import Combine
+import CoreData
 
 enum ApiError: Error {
+    case wrongUrl
     case invalidData
-    case invalidResponse
     case unknown
-    case error(_ message: String)
 }
 
 protocol ApiServiceProtocol {
-    func getCurrencies(completion: @escaping (Result<[Currency], ApiError>) -> Void)
-    func convertCurrency(from: String, to: String, completion: @escaping (Result<Double, ApiError>) -> Void)
+    func convertCurrency(from: CurrencyCode, to: CurrencyCode, sum: Double) -> Double
+    func getRates(_ completion: @escaping (Result<[CurrencyPair], ApiError>) -> Void)
 }
 
-final class ApiService: ApiServiceProtocol {
-    private let apiKey = "fca_live_8gk3TfoCVG9RwunVEtguMeKCgm9TDBrkhIoxpCTN"
-
-    private let testString = URL(string: "https://api.freecurrencyapi.com/v1/currencies?apikey=fca_live_8gk3TfoCVG9RwunVEtguMeKCgm9TDBrkhIoxpCTN&currencies=RUB%2CUSD%2CEUR%2CGBP%2CCHF%2CCNY")!
+final class ApiService: ApiServiceProtocol, ObservableObject {
     
-    func getCurrencies(completion: @escaping (Result<[Currency], ApiError>) -> Void) {
-        URLSession.shared.dataTask(with: testString) { data, response, error in
-            guard let data else {
+    private var timer: Timer?
+    private var pairs = [CurrencyPair]()
+    
+    deinit {
+        self.timer?.invalidate()
+        self.timer = nil
+    }
+    
+    func getRates(_ completion: @escaping (Result<[CurrencyPair], ApiError>) -> Void) {
+        guard let url = Endpoint.ratesURL else {
+            completion(.failure(.wrongUrl))
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            guard let self, let data else {
+                self?.getRatesFromDB()
                 completion(.failure(.invalidData))
                 return
             }
-            guard let response = response as? HTTPURLResponse, 200 ... 299  ~= response.statusCode else {
-                completion(.failure(.invalidResponse))
+            guard let response = response as? HTTPURLResponse, 200 ... 299 ~= response.statusCode else {
+                self.getRatesFromDB()
+                completion(.failure(.invalidData))
                 return
             }
             
             do {
-                let currencyData = try JSONDecoder().decode(CurrencyData.self, from: data)
-                completion(.success(Array(currencyData.data.values)))
+                guard let data = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String: [String: Double]],
+                let model = data["data"] else {
+                    self.getRatesFromDB()
+                    return
+                }
+                deleteRatesFromDB()
+                self.pairs = model.map { (key, value) in
+                    let toCurrency = CurrencyCode(rawValue: key) ?? .EUR
+                    let pair = CurrencyPair(from: .USD, to: toCurrency, rate: value)
+                    self.addRateToDB(pair)
+                    return pair
+                }
             }
             catch {
-                completion(.failure(.error(error.localizedDescription)))
+                self.getRatesFromDB()
+                completion(.failure(.unknown))
             }
         }.resume()
     }
     
-    func convertCurrency(from: String, to: String, completion: @escaping (Result<Double, ApiError>) -> Void) {
-        let url = URL(string: "https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_8gk3TfoCVG9RwunVEtguMeKCgm9TDBrkhIoxpCTN&currencies=\(to)&base_currency=\(from)")!
+    func convertCurrency(from: CurrencyCode, to: CurrencyCode, sum: Double) -> Double {
+        let rate = getRate(from: from, to: to)
+        let result = sum * rate
+        return result
+    }
+    
+    private func getRate(from: CurrencyCode, to: CurrencyCode) -> Double {
+        let fromRate = 1 / getRate(for: from)
+        let toRate = getRate(for: to)
+        return fromRate * toRate
+    }
+    
+    private func getRate(for currency: CurrencyCode) -> Double {
+        guard !pairs.isEmpty else { return 0 }
+        return pairs.filter { $0.to == currency }.first?.rate ?? 0
+    }
+    
+    private func deleteRatesFromDB() {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = CurrencyRate.fetchRequest()
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        _ = try? CoreDataManager.shared.context.execute(batchDeleteRequest)
+    }
+    
+    private func addRateToDB(_ pair: CurrencyPair) {
+        let currencyRate = CurrencyRate(context: CoreDataManager.shared.context)
+        currencyRate.from = pair.from.rawValue
+        currencyRate.to = pair.to.rawValue
+        currencyRate.rate = pair.rate
+        do {
+            try? CoreDataManager.shared.saveContext()
+        } catch(let error) {
+            print("CoreData failed to add: \(error.localizedDescription)")
+        }
+    }
+    
+    private func getRatesFromDB() {
+        let request = NSFetchRequest<CurrencyRate>(entityName: Consts.currencyRateEntity)
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data else {
-                completion(.failure(.invalidData))
-                return
+        do {
+            let rates = try CoreDataManager.shared.context.fetch(request)
+            self.pairs = rates.map { rate in
+                return CurrencyPair(
+                    from: CurrencyCode(rawValue: rate.from!) ?? .USD,
+                    to: CurrencyCode(rawValue: rate.to!) ?? .RUB,
+                    rate: rate.rate
+                )
             }
-            guard let response = response as? HTTPURLResponse, 200 ... 299  ~= response.statusCode else {
-                completion(.failure(.invalidResponse))
-                return
-            }
-            
-            do {
-                if let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:[String:Any]],
-                   let data = json["data"], let rate = data["RUB"] as? Double {
-                    completion(.success(rate))
-                }
-            }
-            catch {
-                completion(.failure(.error(error.localizedDescription)))
-            }
-        }.resume()
+        }
+        catch(let error) {
+            print("CoreData failed to fetch: \(error.localizedDescription)")
+        }
     }
 }

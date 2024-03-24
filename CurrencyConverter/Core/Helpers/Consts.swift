@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum Consts {
+    static let currencyRateEntity = "CurrencyRate"
+    static let convertionEntity = "Convertion"
+}
