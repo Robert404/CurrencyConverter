@@ -15,8 +15,8 @@ struct ConvertionHistoryView: View {
         NavigationView {
             VStack {
                 if viewModel.filteredConvertions.isEmpty {
-                    Text("No items found.")
-                        .font(.title)
+                    Text("No conversions found")
+                        .font(.title2)
                         .foregroundColor(.secondary)
                         .padding()
                 } else {
