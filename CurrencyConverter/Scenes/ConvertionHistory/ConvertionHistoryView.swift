@@ -23,9 +23,9 @@ struct ConvertionHistoryView: View {
                     List {
                         ForEach(viewModel.filteredConvertions, id: \.self) { conversion in
                             HStack {
-                                Text("\(conversion.fromCurrency ?? "") / \(conversion.toCurrency ?? "")")
+                                Text("\(conversion.fromCurrency) / \(conversion.toCurrency)")
                                 Spacer()
-                                Text("\(conversion.toCurrency ?? "") \(String(format: "%.2f", conversion.sum))")
+                                Text("\(conversion.toCurrency) \(String(format: "%.2f", conversion.sum))")
                             }
                         }
                     }

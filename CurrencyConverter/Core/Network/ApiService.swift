@@ -98,7 +98,7 @@ final class ApiService: ApiServiceProtocol, ObservableObject {
         currencyRate.to = pair.to.rawValue
         currencyRate.rate = pair.rate
         do {
-            try? CoreDataManager.shared.saveContext()
+            try CoreDataManager.shared.saveContext()
         } catch(let error) {
             print("CoreData failed to add: \(error.localizedDescription)")
         }
@@ -111,8 +111,8 @@ final class ApiService: ApiServiceProtocol, ObservableObject {
             let rates = try CoreDataManager.shared.context.fetch(request)
             self.pairs = rates.map { rate in
                 return CurrencyPair(
-                    from: CurrencyCode(rawValue: rate.from!) ?? .USD,
-                    to: CurrencyCode(rawValue: rate.to!) ?? .RUB,
+                    from: CurrencyCode(rawValue: rate.from ?? "USD") ?? .USD,
+                    to: CurrencyCode(rawValue: rate.to ?? "RUB") ?? .RUB,
                     rate: rate.rate
                 )
             }

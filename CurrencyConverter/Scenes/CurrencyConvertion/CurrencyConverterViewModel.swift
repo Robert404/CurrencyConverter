@@ -69,8 +69,8 @@ final class CurrencyConverterViewModel: ObservableObject {
         do {
             let convertions = try CoreDataManager.shared.context.fetch(request)
             guard let last = convertions.last else { return }
-            self.firstSelected = CurrencyCode(rawValue: last.fromCurrency ?? "USD") ?? .USD
-            self.secondSelected = CurrencyCode(rawValue: last.toCurrency ?? "EUR") ?? .EUR
+            self.firstSelected = CurrencyCode(rawValue: last.fromCurrency) ?? .USD
+            self.secondSelected = CurrencyCode(rawValue: last.toCurrency) ?? .EUR
         }
         catch(let error) {
             print("CoreData failed to fetch: \(error.localizedDescription)")
@@ -83,7 +83,7 @@ final class CurrencyConverterViewModel: ObservableObject {
         convertion.toCurrency = self.secondSelected.rawValue
         convertion.sum = self.convertedSum
         do {
-            try? CoreDataManager.shared.saveContext()
+            try CoreDataManager.shared.saveContext()
         } catch(let error) {
             print("Core data failed to add: \(error.localizedDescription)")
         }

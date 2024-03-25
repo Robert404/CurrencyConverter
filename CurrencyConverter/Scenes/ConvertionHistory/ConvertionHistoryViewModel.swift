@@ -28,8 +28,8 @@ final class ConvertionHistoryViewModel: ObservableObject {
                     self.filteredConvertions = self.convertions
                 } else {
                     self.filteredConvertions = self.convertions.filter {
-                        $0.fromCurrency!.localizedCaseInsensitiveContains(text) ||
-                        $0.toCurrency!.localizedCaseInsensitiveContains(text) ||
+                        $0.fromCurrency.localizedCaseInsensitiveContains(text) ||
+                        $0.toCurrency.localizedCaseInsensitiveContains(text) ||
                         String($0.sum).contains(text)
                     }
                 }

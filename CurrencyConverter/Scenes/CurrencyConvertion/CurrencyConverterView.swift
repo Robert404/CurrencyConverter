@@ -44,7 +44,9 @@ struct CurrencyConverterView: View {
                         }
                     }
                     .onChange(of: viewModel.firstSelected) { _, _ in
-                        viewModel.convertedSum = 0.0
+                        DispatchQueue.main.async {
+                            viewModel.convertedSum = 0.0
+                        }
                     }
                 
                     Picker(selection: $viewModel.secondSelected, label: Text("To")) {
@@ -53,7 +55,9 @@ struct CurrencyConverterView: View {
                         }
                     }
                     .onChange(of: viewModel.secondSelected) { _, _ in
-                        viewModel.convertedSum = 0.0
+                        DispatchQueue.main.async {
+                            viewModel.convertedSum = 0.0
+                        }
                     }
                 }
                 
