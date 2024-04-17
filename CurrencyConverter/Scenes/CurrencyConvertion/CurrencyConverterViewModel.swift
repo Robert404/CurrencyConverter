@@ -47,12 +47,12 @@ final class CurrencyConverterViewModel: ObservableObject {
     }
     
     func getRates() {
-        apiService.getRates { result in
+        apiService.getRates { [weak self] result in
             switch result {
             case .success:
                 break
             case .failure(let failure):
-                self.showError(failure)
+                self?.showError(failure)
             }
         }
     }
